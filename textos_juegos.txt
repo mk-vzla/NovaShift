@@ -6,6 +6,8 @@ Precio: $59.99
 Outlast 2
 Descripción: Escapa de un culto en un entorno rural aislado.
 Precio: $29.99
+
+
 Acción
 
 God of War Ragnarök
@@ -14,6 +16,8 @@ Precio: $69.99
 Devil May Cry 5
 Descripción: Combate demonios con estilo y combos espectaculares.
 Precio: $39.99
+
+
 Mundo Abierto
 
 The Legend of Zelda: Breath of the Wild
@@ -22,6 +26,8 @@ Precio: $59.99
 Red Dead Redemption 2
 Descripción: Vive la vida de un forajido en el Salvaje Oeste.
 Precio: $59.99
+
+
 Free to Play
 
 Fortnite
@@ -30,6 +36,8 @@ Precio: Gratis (con compras opcionales)
 Apex Legends
 Descripción: Batallas de héroes con habilidades únicas y juego en equipo.
 Precio: Gratis (con compras opcionales)
+
+
 Supervivencia
 
 The Forest
