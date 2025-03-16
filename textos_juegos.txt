@@ -1,3 +1,17 @@
+Características:
+Las características de la página web que deberán crear son las siguientes: 
+ Tener una página principal que contenga el nombre de la PYME (el nombre debe ser 
+creado por su equipo de trabajo), el listado de las categorías junto a sus nombres. 
+ Cada categoría deberá tener un hipervínculo asociado y una imagen de referencia de 
+esta. 
+ Dentro de la sección de cada categoría se deberá desarrollar una ficha con los 
+siguientes datos de los juegos listados dentro: imagen del juego, nombre del juego, 
+una breve descripción y el precio o valor de venta. 
+ Cada pantalla interna deberá tener una serie de hipervínculos que permita pasar de 
+una página a otra o volver al inicio. 
+ Deberán desarrollar 5 categorías con 2 juegos en cada una de ellas como máximo.
+
+
 Terror
 
 Resident Evil Village
