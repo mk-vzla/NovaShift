@@ -45,6 +45,17 @@ form.addEventListener('submit', function (event) {
         document.getElementById('email-error').textContent = '';
     }
 
+    // Validar que el email no esté ya registrado
+const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+const emailExistente = usuarios.some(usuario => usuario.email === email.value.trim());
+
+if (emailExistente) {
+    document.getElementById('email-error').textContent = 'El correo electrónico ya está registrado.';
+    valid = false;
+} else {
+    document.getElementById('email-error').textContent = '';
+}
+
     // Contraseña -- Expresión regular contraseña: /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])\S+$/
     if (password1.value.trim() === '') {
         document.getElementById('password1-error').textContent = 'La contraseña es obligatoria.';
@@ -90,8 +101,21 @@ form.addEventListener('submit', function (event) {
 
     // Si todos los campos son válidos, puedes enviar el formulario o realizar otra acción
     if (valid) {
-        alert("Registro exitoso");
-        form.reset(); // Reinicia el formulario
+        const usuario = {
+            nombre: nombre.value.trim(),
+            alias: alias.value.trim(),
+            email: email.value.trim(),
+            password: password1.value.trim(),
+            fecha: fecha.value.trim(),
+            descripcion: descripcion.value.trim()
+        };
+
+        const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+        usuarios.push(usuario);
+        localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+        alert('Registro exitoso');
+        form.reset();
     }
 });
 
