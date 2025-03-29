@@ -17,7 +17,55 @@ body {
     flex: 1;
 }
 
+.bg-dark {
+    background-color: #000000 !important; /* Negro sólido */
+}
 
+.header-image {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    max-height: 300px; 
+}
+
+.card {
+    background-color: transparent; 
+    border: none; 
+    box-shadow: none; 
+}
+
+.card-body {
+    background-color: transparent;
+    color: white; 
+}
+
+input.form-control {
+    background-color: #343a40; 
+    color: white; 
+    border: 1px solid #495057; 
+}
+
+input.form-control::placeholder {
+    color: #adb5bd; 
+    text-align: center; 
+}
+
+h4 {
+    color: rgb(255, 99, 71); /* Cambia el color del texto (en este caso, rojo tomate) */
+    font-weight: bold; /* Hace el texto negrita */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 1.8rem; /* Ajusta el tamaño del texto */
+}
+
+
+.card-img-top {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta la imagen para que se ajuste al contenedor manteniendo la proporción */
+    border-radius: 5px; /* Opcional: redondea las esquinas de las imágenes */
+}
+
+/*
 .background-image {
     position: fixed;
     top: 0;
@@ -111,9 +159,9 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    margin-top: auto; /* Empuja el footer al final del contenido */
-}
+    width: 100%; 
+    margin-top: auto; Empuja el footer al final del contenido 
+} 
 
 table {
     margin: 0 auto;
