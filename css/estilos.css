@@ -65,93 +65,25 @@ h4 {
     border-radius: 5px; /* Opcional: redondea las esquinas de las imágenes */
 }
 
-/*
-.background-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../imagenes/nova_background.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.4;
-    z-index: -2;
+textarea.form-control, 
+select.form-select, 
+input.form-check-input {
+    background-color: #343a40; 
+    color: white; 
+    border: 1px solid #495057; 
+    border-radius: 5px; 
+    display: block; 
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto dentro del elemento */
 }
 
-header {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+textarea.form-control::placeholder, 
+select.form-select::placeholder {
+    color: #adb5bd; 
 }
 
-.header-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 20px;
-}
-
-header div {
-    display: flex;
-    align-items: center;
-}
-
-header span {
-    margin-left: 20px;
-    font-size: 24px;
-    color: aqua;
-}
-
-header a {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-}
-
-ul {
-    display: grid;
-    margin: 30px;
-}
-
-li {
-    display: inline-block;
-    margin: 20px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    font-size: 40px;
-}
-
-a:hover {
-    background-color: rgb(141, 206, 123);
-    padding: 10px;
-    color: brown;
-    border-radius: 10px;
-}
-
-.sombreado {
-    border-radius: 16px;
-    box-shadow: 2px 2px 16px 16px #6d6d6d;
+input.form-check-input {
+    accent-color: #495057; 
 }
 
 footer {
@@ -160,60 +92,6 @@ footer {
     text-align: center;
     padding: 15px;
     width: 100%; 
-    margin-top: auto; Empuja el footer al final del contenido 
+    margin-top: auto;
 } 
-
-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    margin-bottom: 40px;
-}
-
-#caja {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;
-    box-sizing: border-box;
-}
-
-#caja img {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    margin: 100px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-#caja img:hover {
-    transform: scale(1.3);
-    box-shadow: 0 0 20px 10px #00f;
-}
-
-h3 {
-    color: white;
-    font-size: 30px;
-    margin: 20px;
-    font-weight: bold;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-nav a:hover {
-    background-color: rgb(141, 206, 123);
-    color: brown;
-    border-color: brown;
-}
 
