@@ -2,7 +2,7 @@ const form = document.getElementById('formulario_login');
 
 
 const alias = document.getElementById('alias');
-const password1 = document.getElementById('password1');
+const password = document.getElementById('password');
 
 
 form.addEventListener('submit', function (event) {
@@ -21,17 +21,17 @@ form.addEventListener('submit', function (event) {
 
 
     // Contraseña -- Expresión regular contraseña: /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])\S+$/
-    if (password1.value.trim() === '') {
-        document.getElementById('password1-error').textContent = 'La contraseña es obligatoria.';
+    if (password.value.trim() === '') {
+        document.getElementById('password-error').textContent = 'La contraseña es obligatoria.';
         valid = false;
-    } else if (password1.value.trim().length < 6 || password1.value.trim().length > 18) {
-        document.getElementById('password1-error').textContent = 'La contraseña debe tener entre 6 y 18 caracteres.';
+    } else if (password.value.trim().length < 6 || password.value.trim().length > 18) {
+        document.getElementById('password-error').textContent = 'La contraseña debe tener entre 6 y 18 caracteres.';
         valid = false;
-    } else if (!/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])\S+$/.test(password1.value.trim())) {
-        document.getElementById('password1-error').textContent = 'La contraseña debe contener al menos una letra mayúscula, una minúscula y un número.';
+    } else if (!/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])\S+$/.test(password.value.trim())) {
+        document.getElementById('password-error').textContent = 'La contraseña debe contener al menos una letra mayúscula, una minúscula y un número.';
         valid = false;
     } else {
-        document.getElementById('password1-error').textContent = '';
+        document.getElementById('password-error').textContent = '';
     }
 
 
@@ -42,7 +42,7 @@ form.addEventListener('submit', function (event) {
     if (valid) {
         const usuario = {
             alias: alias.value.trim(),
-            password: password1.value.trim(),
+            password: password.value.trim(),
             };
 
         alert('Registro exitoso');

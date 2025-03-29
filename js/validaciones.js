@@ -7,6 +7,7 @@ const password1 = document.getElementById('password1');
 const password2 = document.getElementById('password2');
 const fecha = document.getElementById('fecha');
 const descripcion = document.getElementById('direccion');
+const rol = document.getElementById('rol');
 
 form.addEventListener('submit', function (event) {
     event.preventDefault(); // Evita el envío del formulario por defecto
@@ -80,6 +81,14 @@ form.addEventListener('submit', function (event) {
         document.getElementById('fecha-error').textContent = '';
     }
 
+    //Rol
+    if (rol.value.trim() === '') {
+        document.getElementById('rol-error').textContent = 'El Rol es obligatorio.';
+        valid = false;
+    } else {
+        document.getElementById('rol-error').textContent = '';
+    }
+
     // Términos
     if (!document.getElementById('terminos').checked) {
         document.querySelector('.error-message').textContent = 'Debes aceptar los términos y condiciones.';
@@ -96,7 +105,8 @@ form.addEventListener('submit', function (event) {
             email: email.value.trim(),
             password: password1.value.trim(),
             fecha: fecha.value.trim(),
-            descripcion: descripcion.value.trim()
+            descripcion: descripcion.value.trim(),
+            rol: rol.value.trim()
         };
 
         alert('Registro exitoso');
