@@ -94,4 +94,10 @@ footer {
     width: 100%; 
     margin-top: auto;
 } 
+.desarrolladores-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px;
+}
 
