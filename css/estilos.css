@@ -101,3 +101,40 @@ footer {
     max-height: 300px;
 }
 
+button, .btn {
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    box-shadow: 0 0 10px 2px #9400D3, 0 0 20px 4px #9400D3; /* Efecto de neón púrpura */
+    border-color: #9400D3; /* Cambia el color del borde */
+}
+
+/* Efecto de hover para el ícono del carrito */
+.bi-cart, .bi-cart-fill {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.bi-cart:hover, .bi-cart-fill:hover {
+    box-shadow: 0 0 10px 2px #9400D3, 0 0 20px 4px #9400D3; 
+    }
+
+/* Efecto de hover para el ícono del perfil */
+.bi-person {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.bi-person:hover {
+    box-shadow: 0 0 10px 2px #9400D3, 0 0 20px 4px #9400D3; 
+}
+
+/* Efecto de hover para los enlaces de las categorías */
+.nav-link {
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #9400D3;
+    text-shadow: 0 0 10px #9400D3, 0 0 20px #9400D3; 
+    transform: scale(1.2); 
+}

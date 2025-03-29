@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const cartIcon = document.querySelector('.bi-cart'); // Selecciona el ícono del carrito
+    const cartIcon = document.querySelector('.bi-cart');
     const buyButtons = document.querySelectorAll('.btn-primary'); // Selecciona todos los botones "Comprar"
 
     buyButtons.forEach(button => {
