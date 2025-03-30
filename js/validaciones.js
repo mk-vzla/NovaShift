@@ -29,6 +29,12 @@ form.addEventListener('submit', function (event) {
     if (alias.value.trim() === '') {
         document.getElementById('alias-error').textContent = 'El alias es obligatorio.';
         valid = false;
+    } else if (alias.value.trim().length < 3) {
+        document.getElementById('alias-error').textContent = 'El alias debe tener al menos 3 caracteres.';
+        valid = false;
+    } else if (alias.value.trim().length > 15) {
+        document.getElementById('alias-error').textContent = 'El alias no debe exceder los 15 caracteres.';
+        valid = false;
     } else {
         document.getElementById('alias-error').textContent = '';
     }
