@@ -151,3 +151,7 @@ button:hover, .btn:hover {
     text-shadow: 0 0 10px #9400D3, 0 0 20px #9400D3; 
     transform: scale(1.2); 
 }
+
+.separar_Vert {
+    margin-top: 10px;
+}
