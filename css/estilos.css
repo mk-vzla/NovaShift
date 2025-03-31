@@ -101,6 +101,19 @@ footer {
     max-height: 300px;
 }
 
+.juegos2-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.gamer-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px;
+}
 button, .btn {
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
