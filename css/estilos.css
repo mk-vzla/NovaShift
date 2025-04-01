@@ -124,18 +124,22 @@ button:hover, .btn:hover {
 }
 
 /* Efecto de hover para el ícono del carrito */
+/*
 .bi-cart, .bi-cart-fill {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+*/
 
 .bi-cart:hover, .bi-cart-fill:hover {
     box-shadow: 0 0 10px 2px #9400D3, 0 0 20px 4px #9400D3; 
     }
 
 /* Efecto de hover para el ícono del perfil */
+/*
 .bi-person {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+*/
 
 .bi-person:hover {
     box-shadow: 0 0 10px 2px #9400D3, 0 0 20px 4px #9400D3; 
@@ -146,13 +150,21 @@ button:hover, .btn:hover {
     transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
 }
 
+/* Efecto de hover para los enlaces de navegación */
 .nav-link:hover {
-    color: #9400D3;
-    text-shadow: 0 0 10px #9400D3, 0 0 20px #9400D3; 
-    transform: scale(1.2); 
+    color: #9400D3; /* Cambia el color del texto a púrpura */
+    text-shadow: 0 0 10px #9400D3, 0 0 20px #9400D3; /* Agrega un efecto de neón púrpura */
+    transform: scale(1.2); /* Aumenta el tamaño del enlace al pasar el cursor */
 }
 
 .separar_Vert {
     margin-top: 7px;
     margin-left: 7px;
+}
+
+.nav-item.separar_Vert a:hover svg {
+    background-color: #6a0dad; /* Fondo púrpura */
+    border-radius: 50%; /* Hace que el fondo sea circular */
+    box-shadow: 0 0 15px #6a0dad, 0 0 30px #6a0dad; /* Efecto de neón */
+    transition: all 0.3s ease-in-out; /* Suaviza la transición */
 }
